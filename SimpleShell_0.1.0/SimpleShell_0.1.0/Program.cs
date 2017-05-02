@@ -1,12 +1,6 @@
 ﻿using System;
 using System.IO;
 
-// I have some simple functions that works perfectly well, but what
-// you will need to do is write a static function and then add it with
-// the shell.AddCommand() and the first parameter is the function name
-// in other words how it will be invoked or is recognized and the next parameter
-// is the function which must take in a type of argument
-//
 // TODO: 
 //
 // Make commands objects so we can pass the ToString functions as the 
@@ -64,7 +58,8 @@ namespace SimpleShell_0._1._0
         public static int lsh_Help(string[] arguments)
         {
             Console.Write("cd = change directory\nls = list directory\nmd = create new folder directory\n"+
-                          "clear = clears the console\nexit = exits the shell\n");
+                          "clear = clears the console\ndate = display current date\npwd = Print Working Directory\nmv = move file"+
+                          "\nwhoami = Display current user info\nrm = delete file\nexit = exits the shell\n");
             return 1;
         }
         //Function for creating new folder command. ~Josh
